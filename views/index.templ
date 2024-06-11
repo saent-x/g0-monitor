@@ -1,0 +1,15 @@
+package views
+
+templ Index(){
+    <div>    
+        <h1 class="text-red-500 font-bold text-xl">Saent's Hardware Monitor</h1>
+        <div hx-ext="ws" ws-connect="ws://localhost:3030/ws">
+            <div id="update-timestamp"> loading data ...</div>
+            <div id="monitor-data">
+                <div id="system-data"></div>
+                <div id="disk-data"></div>
+                <div id="cpu-data"></div>
+            </div>
+        </div>
+    </div>
+}
